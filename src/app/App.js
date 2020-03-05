@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {CounterContainer} from './components/Counter';
 
 export default class App extends Component {
     constructor(props) {
@@ -11,6 +12,10 @@ export default class App extends Component {
     }
 
     render() {
-        return <h1>{this.state.message}</h1>
+        return (<div>
+         <h1>{this.state.message}</h1>
+         <CounterContainer />
+        </div>
+        );
     }
 }
