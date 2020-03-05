@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import './setupTests';
+import '../../../setupTests';
 import App from './../App';
 
 describe('My Test Suite', () => {

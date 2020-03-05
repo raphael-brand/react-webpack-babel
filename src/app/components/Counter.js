@@ -46,7 +46,7 @@ export const CounterContainer = () => {
     </div>
   );
 };
-const Counter = ({ counter }) => (
+export const Counter = ({ counter }) => (
   <div>
     <p>{counter}</p>
   </div>
