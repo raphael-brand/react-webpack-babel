@@ -22,7 +22,8 @@ describe('Counter', () => {
     });
       
     afterEach(() => {
-      document.body.removeChild(container);
+        ReactDOM.unmountComponentAtNode(container);
+        document.body.removeChild(container);
         container = null;
     });
     
