@@ -30,10 +30,10 @@ export const CounterContainer = () => {
     <div>
       <h1>My Counter</h1>
       <Counter counter={counter} />
-      <button type="button" onClick={() => setCounter(counter + 1)}>
+      <button type="button" data-testid="inc" onClick={() => setCounter(counter + 1)}>
         Increment
       </button>
-      <button type="button" onClick={() => setCounter(counter - 1)}>
+      <button type="button" data-testid="dec" onClick={() => setCounter(counter - 1)}>
         Decrement
       </button>
       <h2>My Async Data</h2>
@@ -48,6 +48,6 @@ export const CounterContainer = () => {
 };
 export const Counter = ({ counter }) => (
   <div>
-    <p>{counter}</p>
+    <p data-testid="counter">{counter}</p>
   </div>
 );
